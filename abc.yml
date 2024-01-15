@@ -1,0 +1,6 @@
+---
+ - name: create a docker container throught docker file
+   hosts: localhost
+   tasks:
+     - name: build dockerfile
+       shell: docker image build -t image:latest /root/Project123/Dockerfile
