@@ -4,3 +4,4 @@ RUN  sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org
 RUN  yum install httpd -y
 RUN  curl -o /var/www/html/index.html http://www.google.com
 CMD  [ "/usr/sbin/apachectl" , "-DFOREGROUND" ]
+THis is is a Docker file
